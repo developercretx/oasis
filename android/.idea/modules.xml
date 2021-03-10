@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1902160242/android.path_provider.iml" filepath="$PROJECT_DIR$/.idea/modules/-1902160242/android.path_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1240714751/android.path_provider_linux.iml" filepath="$PROJECT_DIR$/.idea/modules/1240714751/android.path_provider_linux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1734459842/android.path_provider_macos.iml" filepath="$PROJECT_DIR$/.idea/modules/1734459842/android.path_provider_macos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1165642800/android.path_provider_windows.iml" filepath="$PROJECT_DIR$/.idea/modules/-1165642800/android.path_provider_windows.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1055872027/android.pdf_viewer_jk.iml" filepath="$PROJECT_DIR$/.idea/modules/1055872027/android.pdf_viewer_jk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1994099666/android.sqflite.iml" filepath="$PROJECT_DIR$/.idea/modules/1994099666/android.sqflite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/880860469/android.url_launcher.iml" filepath="$PROJECT_DIR$/.idea/modules/880860469/android.url_launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-887633469/android.url_launcher_linux.iml" filepath="$PROJECT_DIR$/.idea/modules/-887633469/android.url_launcher_linux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1552793783/android.url_launcher_macos.iml" filepath="$PROJECT_DIR$/.idea/modules/-1552793783/android.url_launcher_macos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2122016551/android.url_launcher_web.iml" filepath="$PROJECT_DIR$/.idea/modules/2122016551/android.url_launcher_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1490053394/android.url_launcher_windows.iml" filepath="$PROJECT_DIR$/.idea/modules/1490053394/android.url_launcher_windows.iml" />
+    </modules>
+  </component>
+</project>
