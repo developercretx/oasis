@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:oasis/screen/HomeScreen.dart';
 import 'package:oasis/screen/SplashScreen.dart';
 
 void main() {

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:oasis/components/CustomAppBar.dart';
 import 'package:oasis/components/footer.dart';
 import 'package:oasis/screen/AboutUs.dart';
+import 'package:oasis/screen/Categories.dart';
 import 'package:oasis/screen/ContactUs.dart';
 import 'package:oasis/screen/Downloads.dart';
 import 'package:oasis/screen/Gallary.dart';
@@ -31,7 +32,7 @@ class CustomDrawer extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: height * 0.08),
               child: FlatButton(
-                onPressed: (){
+                onPressed: () {
                   Navigator.pushReplacement(
                     context,
                     PageRouteBuilder(
@@ -62,7 +63,7 @@ class CustomDrawer extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: height * 0.04),
               child: FlatButton(
-                onPressed: (){
+                onPressed: () {
                   Navigator.pushReplacement(
                     context,
                     PageRouteBuilder(
@@ -93,12 +94,13 @@ class CustomDrawer extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: height * 0.04),
               child: FlatButton(
-                onPressed: (){
+                onPressed: () {
                   Navigator.pushReplacement(
                     context,
                     PageRouteBuilder(
                       pageBuilder: (context, animation1, animation2) {
-                        return Sizes();
+                        return CategoryScreen();
+                        // Sizes();
                       },
                       transitionsBuilder:
                           (context, animation1, animation2, child) {
@@ -124,7 +126,7 @@ class CustomDrawer extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: height * 0.04),
               child: FlatButton(
-                onPressed: (){
+                onPressed: () {
                   Navigator.pushReplacement(
                     context,
                     PageRouteBuilder(
@@ -155,7 +157,7 @@ class CustomDrawer extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: height * 0.04),
               child: FlatButton(
-                onPressed: (){
+                onPressed: () {
                   Navigator.pushReplacement(
                     context,
                     PageRouteBuilder(
@@ -186,7 +188,7 @@ class CustomDrawer extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: height * 0.04),
               child: FlatButton(
-                onPressed: (){
+                onPressed: () {
                   Navigator.pushReplacement(
                     context,
                     PageRouteBuilder(

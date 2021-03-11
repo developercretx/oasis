@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:oasis/components/ProgressLoader.dart';
 import 'package:oasis/models/Products.model.dart';
+import 'package:oasis/screen/Tile_Size.dart';
 import 'package:oasis/screen/Tiles.dart';
 import 'package:oasis/utils/App.dart';
 
@@ -9,6 +10,8 @@ class SeriesDisplay extends StatelessWidget {
   final String imgurl;
   final String title;
   final int Id;
+  final String cId;
+  final List sizes;
   final bool spacing;
   final Products_model model;
 
@@ -16,6 +19,8 @@ class SeriesDisplay extends StatelessWidget {
       {Key key,
       this.imgurl,
       this.title,
+      this.cId,
+      this.sizes,
       this.Id,
       this.model,
       this.spacing = true})
@@ -31,10 +36,7 @@ class SeriesDisplay extends StatelessWidget {
           context,
           PageRouteBuilder(
             pageBuilder: (context, animation1, animation2) {
-              return Tiles(
-                Id: Id,
-                model: model,
-              );
+              return TileSize(id: Id, list: sizes, model: model);
             },
             transitionsBuilder: (context, animation1, animation2, child) {
               return FadeTransition(
@@ -62,7 +64,9 @@ class SeriesDisplay extends StatelessWidget {
                 imageUrl: App.imgUrl + imgurl.split('/')[1],
                 fit: BoxFit.cover,
                 progressIndicatorBuilder: (context, url, downloadProgress) =>
-                    Center(child: CircularProgressIndicator(value: downloadProgress.progress)),
+                    Center(
+                        child: CircularProgressIndicator(
+                            value: downloadProgress.progress)),
                 errorWidget: (context, url, error) => Icon(Icons.error),
               ),
             ),
@@ -82,8 +86,9 @@ class SeriesDisplay extends StatelessWidget {
                       ],
                       fontFamily: "book",
                       color: Colors.white,
-                      letterSpacing: spacing ? 15 : 0,
-                      fontSize: 20),
+                      letterSpacing: spacing ? 5 : 0,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600),
                 ),
               ),
             )

@@ -89,8 +89,8 @@ class _TilesState extends State<Tiles> {
                         child: GridView.builder(
                           itemCount: _tilesmodelList.length,
                           itemBuilder: (context, index) => TilesCard(
-                            Id: _tilesmodelList[index].id,
-                            Title: _tilesmodelList[index].code,
+                            id: _tilesmodelList[index].id,
+                            title: _tilesmodelList[index].code,
                             imUrl: _tilesmodelList[index].imgurl,
                             model: widget.model,
                           ),

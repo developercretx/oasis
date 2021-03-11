@@ -5,12 +5,12 @@ import 'package:oasis/screen/TilesDetails.dart';
 import 'package:oasis/utils/App.dart';
 
 class TilesCard extends StatelessWidget {
-  final String Title;
+  final String title;
   final String imUrl;
-  final int Id;
+  final int id;
   final Products_model model;
 
-  const TilesCard({Key key, this.Title, this.Id, this.imUrl, this.model})
+  const TilesCard({Key key, this.title, this.id, this.imUrl, this.model})
       : super(key: key);
 
   @override
@@ -24,8 +24,8 @@ class TilesCard extends StatelessWidget {
           PageRouteBuilder(
             pageBuilder: (context, animation1, animation2) {
               return TilesDetails(
-                Id: Id,
-                Title: Title,
+                Id: id,
+                Title: title,
                 model: model,
                 imgurl: imUrl,
               );
@@ -70,9 +70,10 @@ class TilesCard extends StatelessWidget {
                 flex: 2,
                 child: Center(
                   child: Text(
-                    Title,
+                    title,
                     style: TextStyle(
                       fontFamily: "book",
+                      fontSize: 13,
                       color: Colors.black,
                     ),
                   ),
